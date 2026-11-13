@@ -374,6 +374,11 @@ struct llm_build_lfm2 : public llm_graph_context {
     llm_build_lfm2(const llama_model & model, const llm_graph_params & params);
 };
 
+// LFM3: hybrid short-conv + gated sliding-window/full attention (always iswa)
+struct llm_build_lfm3 : public llm_graph_context {
+    llm_build_lfm3(const llama_model & model, const llm_graph_params & params);
+};
+
 struct llm_build_llada : public llm_graph_context {
     llm_build_llada(const llama_model & model, const llm_graph_params & params);
 };
